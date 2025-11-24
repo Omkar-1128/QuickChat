@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Chat App - Enter Username</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="username-container">
+    <div class="username-box">
+      <h1>Welcome to Chat App</h1>
+      <p>Please enter your username to continue</p>
+      <form id="username-form">
+        <input 
+          id="username-input" 
+          type="text" 
+          placeholder="Enter your username" 
+          autocomplete="off" 
+          required 
+        />
+        <button type="submit">Enter</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('username-form');
+    const input = document.getElementById('username-input');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const username = input.value.trim();
+      if (username) {
+        localStorage.setItem('chatUsername', username);
+        window.location.href = '/chat';
+      }
+    });
+  </script>
+</body>
+</html>

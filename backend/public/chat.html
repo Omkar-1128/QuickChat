@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Chat Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="header-content">
+        <h2>💬 Chat Room</h2>
+        <span class="online-status">● Online</span>
+      </div>
+      <button id="disconnectBtn" class="exit-btn">Exit</button>
+    </div>
+    
+    <div class="messages-container">
+      <ul id="messages"></ul>
+    </div>
+    
+    <form id="form" class="message-form">
+      <input type="file" id="fileInput" style="display: none;" />
+      <button type="button" id="attachBtn" class="attach-btn" title="Attach file">
+        📎
+      </button>
+      <input id="input" autocomplete="off" placeholder="Type a message..." />
+      <button type="submit" class="send-btn">
+        <span class="send-text">Send</span>
+        <span class="send-icon">➤</span>
+      </button>
+    </form>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
