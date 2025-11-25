@@ -83,6 +83,16 @@ The app automatically detects the environment and uses the correct WebSocket pro
 
 **Deployed on Render**: [https://quickchat-wx53.onrender.com](https://quickchat-wx53.onrender.com)
 
+### Deploy to Render
+
+1. Push your code to GitHub
+2. Connect your repo to Render
+3. Use these settings:
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+   - **Root Directory**: Leave empty (uses root package.json)
+4. Deploy!
+
 ## 📱 Browser Support
 
 Chrome, Firefox, Safari, Edge, Opera, and mobile browsers
